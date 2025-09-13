@@ -44,12 +44,18 @@ export const getCsvAsArrayALT = async(limit) => {
 
         let csvValues = [];
         let dataArray = data.split("\r\n");
-       
-        dataArray.forEach(entry =>{
-            if(entry.length > 0) {
+        
+        let counter = 0;
+        for (const entry of dataArray) {
+            
+            if(counter == limit && limit != 0) {
+                break;
+            }
+            else if(entry.length > 0) {
                 csvValues.push(entry.split(";"));
             }
-        });
+            counter++;
+        };
         
         return csvValues;
 
