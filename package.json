@@ -1,0 +1,24 @@
+{
+  "name": "kodtest",
+  "version": "1.0.0",
+  "description": "kodtest 13/9-25",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josefuh/kodtest.git"
+  },
+  "author": "josef al irani",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/josefuh/kodtest/issues"
+  },
+  "homepage": "https://github.com/josefuh/kodtest#readme",
+  "dependencies": {
+    "csv-parse": "^6.1.0",
+    "express": "^5.1.0"
+  }
+}
